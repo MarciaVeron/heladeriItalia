@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 15%, 1%, 0.94),hsla(227, 15%, 21%, 0.94));
+    background: linear-gradient(to right, hsla(0, 15%, 1%, 0.94),hsla(227, 15%, 21%, 0.94)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.navbar-nav li  a {
+    padding: 15px 20px; 
+    text-decoration: none;
+    color: white;
+}   
+
+.navbar-nav li a:hover {
+    background-color: rgb(139, 0, 255);
+    transition: all .3s;
+}
+
+/* .navbar-brand img {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-item {
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+.nav-item li {
+    display: inline-block;
+}
+
+.nav-item   li  a {
+    display: block;
+    padding: 15px 20px; 
+    text-decoration: none;
+    color: white;
+}   
+
+.nav-item li a:hover {
+    background-color: rgb(139, 0, 255);
+    transition: all .3s;
+} */
+
+/* @media screen and (max-width: 485px) {
+    nav ul {
+        padding-left: 0;
+    }
+    nav li {
+        display: block;
+        padding: 15px;
+    }
+    nav a {
+        display: block;
+        padding: 20px;
+        width: auto;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 0;
+    }
+}
+ */
+ /* Intro */
+ 
+#intro {
+    width: 100%;
+    height: 300px;
+    background-image: url(/multimedia/sabores.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0;
+}
+
+#intro .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#intro .intro__titulo {
+    color: rgb(102, 0, 153);
+    background-color: transparent;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 58px;
+    padding: 100px;
+}
+
+.intro__texto {
+    color: #c039c5;
+    font-size: 30px; 
+    letter-spacing: 1.5px;
+}
+
+.texto {
+    font-size: 20px; 
+    letter-spacing: 1.5px;
+}
+
+/* cards */
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 500px ;
+}
+
+.cards-item {
+    background-color: #d6a5fc;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+}
+
+.cards-item img {
+    width: 200px;
+    min-width: 100px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.cards-item a {
+    color: black;
+}
+
+.cards-item a:hover {
+    background-color: rgb(81,209,246);
+    transition: all .3s;
+}
+
+@media screen and (min-width: 768px)/*  and (max-width: 1023px) */ {
+    .cards-container {
+        justify-content: space-evenly;
+    }  
+    .cards-item {
+        width: 100px;
+        height: 400px;
+    }
+    .cards-item img {
+        width: 100px;
+    } 
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+    .cards-container {
+        justify-content: space-evenly;
+        height: 200px;
+    } 
+    .cards-item {
+        width: 50px;
+        height: 50px;
+    }
+    .cards-item img {
+        width: 50px;
+        height: 50px;
+    } 
+}
+
+/* footer */
+
+.container-footer{
+    background-image: url(/multimedia/footer.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    font-size: 2rem;
+}
+
+.container-footer img {
+    margin-top: auto;
+    margin-left: 100px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.container-footer p {
+    text-align: justify;
+    width: auto;
+    padding: 70px;
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+        height: 300px;
+    } 
+    .footer img {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 0;
+        height: 100px; 
+    }
+    .footer p {
+        height: 0;
+        padding: 0;
+        margin: 0;
+    } 
+}
+
+

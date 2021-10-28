@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+
+#intro {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+#intro .intro__texto {
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 58px;
+    padding: 50px;
+    animation: background 10s infinite;
+}
+
+@keyframes background {
+    from {background-color: #a18cd1;}
+    to {background-color: #fbc2eb;}
+}
+
+.container {
+    background-image: url(/multimedia/pag.crema.jpg);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 600px ;
+    padding: 120px;
+}
+
+.item {
+    background-color: #d1d0ca83 ;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.texto {
+    color:white;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+@media screen and (max-width: 815px){
+    .container {
+        display: inline-block;
+        justify-content: space-evenly;
+        width: auto;
+        height: auto;
+        padding: 50px;
+    }
+    .item {
+        width: auto;
+        height: 150px;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 450) {
+    .sub-texto p {
+        display: none;
+    }
+}
+.footer {
+    background-image: url(/multimedia/footer.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    font-size: 2rem;
+}
+
+.footer img {
+    margin-top: auto;
+    margin-left: 100px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.footer p {
+    text-align: justify;
+    width: auto;
+    padding: 70px;
+}
