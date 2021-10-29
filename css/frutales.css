@@ -31,8 +31,10 @@
     #intro .intro__texto {
         font-size: 28px;  
 }
+}
+
 .container {
-    background-image: url(/multimedia/pag.frutales.jpg);
+    background-image: url(/multimedia/h.frutales.jpg);
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,20 +64,30 @@
 }
 
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 850px) {
     .container {
+        background-image: url(/multimedia/h.frutales.jpg);
         display: inline-block;
         justify-content: space-evenly;
-        width: auto;
-        height: auto;
-        padding: 50px;
+        width: 100%;
+        height: 520px;
+        padding: 10px;
     }
     .item {
-        width: auto;
-        height: 150px;
+        width: 300px;
+        height: 100px;
         margin: 0px;
+        text-align: center;
+        padding: 10px ;
     }
-}
+    .texto {
+        font-size: 15px;
+        padding: 10px ;
+        line-height: 0;
+    }
+    .sub-texto{
+        font-size: 10px;
+    }
 }
 
 .footer {
