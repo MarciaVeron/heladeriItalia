@@ -27,6 +27,12 @@
     to {background-color: #fbc2eb;}
 }
 
+@media screen and (max-width: 650px) {
+    #intro .intro__texto {
+        font-size: 28px;  
+}
+}
+
 .container {
     background-image: url(/multimedia/pag.especiales.jpg);
     background-position: inherit;

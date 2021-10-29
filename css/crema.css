@@ -27,6 +27,12 @@
     to {background-color: #fbc2eb;}
 }
 
+@media screen and (max-width: 650px) {
+    #intro .intro__texto {
+        font-size: 28px;  
+}
+}
+
 .container {
     background-image: url(/multimedia/pag.crema.jpg);
     background-position: inherit;
@@ -41,7 +47,7 @@
 .item {
     background-color: #d1d0ca83 ;
     width: 400px;
-    height: 300px;
+    height: 400px;
     margin: 20px;
     padding: 20px;
 }
@@ -54,13 +60,13 @@
 }
 
 
-@media screen and (max-width: 815px){
+@media screen and (max-width: 939px){
     .container {
         display: inline-block;
         justify-content: space-evenly;
         width: auto;
-        height: auto;
-        padding: 50px;
+        height: 600px;
+        padding: 0px;
     }
     .item {
         width: auto;
@@ -70,16 +76,31 @@
 }
 
 @media screen and (max-width: 450) {
+    .container {
+        height: auto;
+    }
+
+    .item {
+        height: 100px;
+    }
+
+    .texto{
+        font-size: 15px;  
+        line-height: 60px;
+        letter-spacing: 0px;
+    }
+
     .sub-texto p {
-        display: none;
+        font-size: 10px;
     }
 }
+
 .footer {
     background-image: url(/multimedia/footer.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
+    width:auto;
     height: 300px;
     font-size: 2rem;
 }

@@ -122,16 +122,6 @@
     padding: 100px;
 }
 
-.intro__texto {
-    color: #c039c5;
-    font-size: 30px; 
-    letter-spacing: 1.5px;
-}
-
-.texto {
-    font-size: 20px; 
-    letter-spacing: 1.5px;
-}
 
 /* cards */
 
@@ -156,7 +146,7 @@
     object-fit: cover;
 }
 
-.cards-item a {
+.cards-item .cards-text {
     color: black;
 }
 
